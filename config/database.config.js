@@ -1,13 +1,14 @@
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const dbconfig = require('./config')
 
+const client = new MongoClient(dbconfig.uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  serverApi: ServerApiVersion.v1,
+});
 
 module.exports = {
-  client: (client = new MongoClient(dbconfig.uri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    serverApi: ServerApiVersion.v1,
-  })),
+  client,
   connectToDB: async () => {
     try {
       await client.connect();

@@ -2,5 +2,5 @@ projectKey=todo-svc
 serverUrl=http://localhost:9000
 serverVersion=7.1.0.11001
 dashboardUrl=http://localhost:9000/dashboard/index/todo-svc
-ceTaskId=AYjju-GfWnjjgB3fEUYK
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYjju-GfWnjjgB3fEUYK
+ceTaskId=AYjl942WO0LB_WknmThM
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYjl942WO0LB_WknmThM
